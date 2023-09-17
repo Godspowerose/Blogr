@@ -16,7 +16,7 @@ header {
   background-color: #ff545d;
   border-radius: 0 0 0 100px;
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: 150%;
   background-position: center;
   /* display: block; */
   overflow: hidden;
@@ -27,12 +27,12 @@ header {
     align-items: center;
     justify-content: space-between;
 } */
-.pat {
+/* .pat {
   position: absolute;
   width: 100%;
   height: auto;
   right: 0;
-}
+} */
 nav {
   display: flex;
   justify-content: space-between;
@@ -264,10 +264,17 @@ ul.submenu {
 .submenu li {
   display: block;
   margin-bottom: 10px;
+  padding: 0 10px;
 }
 
 .submenu li a {
-  color: #ff545d;
+  color: #000000;
+}
+.submenu li a:hover {
+    font-weight: bold;
+}
+.sidemenu2 {
+  display: none;
 }
 
 /* -----Responsiveness for Tablet ----- */
@@ -286,8 +293,8 @@ ul.submenu {
     gap: 100px;
   }
   .phone {
-    width: 110%;
-    height: auto;
+    height: 410px;
+    top: -70px;
   }
   .righttext {
     padding: 51px;
@@ -295,9 +302,14 @@ ul.submenu {
   .alls {
     height: 280px;
   }
+  .ballbox {
+    position: relative;
+    overflow: hidden;
+    height: 255px;
+  }
   .ball {
-    margin-bottom: -358px;
-    margin-left: -69px;
+    height: 348px;
+    margin-top: -125px;
   }
   .rightimg {
     width: 110%;
@@ -321,6 +333,9 @@ ul.submenu {
   .hamburger {
     display: none;
   }
+  .sidemenu2 {
+    display: none;
+  }
 }
 
 /* ----- Responsiveness for Smartphone ----- */
@@ -338,6 +353,7 @@ ul.submenu {
   }
   header {
     padding: 40px 30px;
+    background-size: 300%;
   }
   .headertext {
     padding: 20px;
@@ -380,13 +396,13 @@ ul.submenu {
     margin-left: -84px;
   }
   .phone {
-    margin-top: -444px;
+    margin-top: -120px;
     width: 100%;
     height: auto;
   }
   .ball {
     margin-bottom: -222px;
-    margin-left: 0px;
+    margin-left: 32px;
   }
   .righttext {
     text-align: center;
@@ -443,4 +459,75 @@ ul.submenu {
     color: #fff;
     gap: 60px;
   }
+  .hamburger {
+    display: block;
+  }
+  .sidemenu2 {
+    display: none;
+  }
+}
+
+.sidemenu2 {
+  position: fixed;
+  z-index: 2;
+}
+
+.sidemenu {
+  width: 100vw;
+  height: 35vh;
+  background-color: #ff545d;
+}
+.sidemenulogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 30px;
+}
+.allmenu {
+  display: flex;
+  justify-content: center;
+}
+.allm {
+  background-color: #fff;
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 38px 10px;
+  border-radius: 10px;
+}
+.allm li {
+  list-style: none;
+}
+.allm a {
+  text-decoration: none;
+  color: #000000;
+  text-align: center;
+}
+.signup {
+  display: flex;
+  flex-direction: column;
+}
+ul.submenu2 {
+  background-color: #ebebeb;
+  margin: 10px;
+  padding: 10px;
+}
+.btn1 {
+  padding: 10px 20px;
+  margin: 0 80px;
+  border: none;
+  color: #fff;
+  background-image: linear-gradient(90deg, #ff856e, #ff4457);
+  border-radius: 50px;
+}
+a.loginlink {
+  margin-bottom: 10px;
+}
+.dline {
+  padding: 0 12px;
+}
+.line {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
